@@ -57,8 +57,8 @@ li {
 h2 {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0;
-  color: #fff;
 }
 
 body {
@@ -124,8 +124,17 @@ i:hover {
     grid-area: 3;
   }
 
-  svg {
+  .icon {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon svg {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 0;
+    padding-left: 2.5rem;
   }
 
   p {
