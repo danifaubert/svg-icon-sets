@@ -1,0 +1,72 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: 'Overpass', sans-serif;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: linear-gradient(0deg, rgba(255, 94, 58, 1) 0%, rgba(255, 149, 0, 1) 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  list-style: none;
+  list-style-type: none;
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  list-style-type: none;
+  justify-content: space-between;
+  color: #fff;
+}
+
+a:hover,
+a:focus {
+  color: rgba(255, 255, 255, .7);
+}
+
+.icon {
+  position: relative;
+  height: 8em;
+  width: 8em;
+}
+
+.icon svg {
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  fill: currentColor;
+  list-style: none;
+  list-style-type: none;
+}
